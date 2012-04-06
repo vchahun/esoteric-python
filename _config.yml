@@ -3,3 +3,4 @@ pygments: true
 auto: true
 paginate: 20
 pygments: true
+baseurl: /esoteric-python
