@@ -2,11 +2,10 @@
 layout: nil
 ---
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0">
   <channel>
-    <title>engel</title>
-    <link>http://engel.uk.to</link>
-    <atom:link href="http://engel.uk.to/rss.xml" rel="self" type="application/rss+xml" />
+    <title>Esoteric Python</title>
+    <link>http://victor.chahuneau.fr/esoteric-python</link>
     <language>en-US</language>
     <pubDate>{{ site.time | date: '%a, %d %b %Y %H:%M:%S %z' }}</pubDate>
     <lastBuildDate>{{ site.time | date: '%a, %d %b %Y %H:%M:%S %z' }}</lastBuildDate>
@@ -14,10 +13,10 @@ layout: nil
     {% for post in site.posts %}
     <item>
       <title>{{ post.title }}</title>
-      <link>http://engel.uk.to{{ post.url }}</link>
+      <link>http://victor.chahuneau.fr/esoteric-python/{{ post.url }}</link>
       <pubDate>{{ post.date | date: '%a, %d %b %Y %H:%M:%S %z' }}</pubDate>
-      <author>engel@engel.uk.to (Hans Engel)</author>
-      <guid>http://engel.uk.to{{ post.url }}</guid>
+      <author>victor@chahuneau.fr (Victor Chahuneau)</author>
+      <guid>http://victor.chahuneau.fr/esoteric-python/{{ post.url }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}

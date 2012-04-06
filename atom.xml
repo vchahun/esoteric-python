@@ -4,22 +4,22 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>engel</title>
- <link href="http://engel.uk.to/atom.xml" rel="self"/>
- <link href="http://engel.uk.to/"/>
+ <title>Esoteric Python</title>
+ <link href="http://victor.chahuneau.fr/esoteric-python/atom.xml" rel="self"/>
+ <link href="http://victor.chahuneau.fr/esoteric-python"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://engel.uk.to/</id>
+ <id>http://victor.chahuneau.fr/esoteric-python</id>
  <author>
-   <name>Hans Engel</name>
-   <email>engel@engel.uk.to</email>
+   <name>Victor Chahuneau</name>
+   <email>victor@chahuneau.fr</email>
  </author>
 
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://engel.uk.to{{ post.url }}"/>
+   <link href="http://victor.chahuneau.fr/esoteric-python/{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://engel.uk.to{{ post.id }}</id>
+   <id>http://victor.chahuneau.fr/esoteric-python/{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
