@@ -48,7 +48,7 @@ pre, blockquote {
 }
 
 pre, tt, code {
-  font-family: monospace;
+    font: 12pt Consolas, Monaco, monospace;
 }
 
 .align-center {
@@ -203,11 +203,4 @@ ul#archive li .description {
 
 ul#archive li .description .tagline {
   margin: 0;
-}
-
-.gist {
-    font-size: 13px;
-}
-.gist div {
-    font-family: Consolas, Monaco, monospace;
 }
