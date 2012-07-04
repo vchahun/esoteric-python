@@ -13,10 +13,10 @@ layout: nil
     {% for post in site.posts %}
     <item>
       <title>{{ post.title }}</title>
-      <link>http://victor.chahuneau.fr/esoteric-python/{{ post.url }}</link>
+      <link>http://victor.chahuneau.fr/esoteric-python{{ post.url }}</link>
       <pubDate>{{ post.date | date: '%a, %d %b %Y %H:%M:%S %z' }}</pubDate>
       <author>victor@chahuneau.fr (Victor Chahuneau)</author>
-      <guid>http://victor.chahuneau.fr/esoteric-python/{{ post.url }}</guid>
+      <guid>http://victor.chahuneau.fr/esoteric-python{{ post.url }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}

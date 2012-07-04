@@ -1,4 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/*
+ * Inspired from http://engel.uk.to
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
 html, body {
   height: 100%;
@@ -6,7 +10,8 @@ html, body {
 
 body {
   background-color: #fafafa;
-  font: 19px 'Baskerville';
+  font: 19px Lato, sans-serif;
+  font-weight: 400;
   color: #222;
   line-height: 25px;
 }
@@ -14,7 +19,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #333;
   margin: 5px 0px;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 h1 {
